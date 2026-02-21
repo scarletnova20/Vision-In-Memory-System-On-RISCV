@@ -1,0 +1,17 @@
+output/
+*.mem
+VISOR.cache/
+VISOR.runs/
+VISOR.sim/
+VISOR.ip_user_files/
+VISOR.hw/
+.Xil/
+*.log
+*.jou
+*.backup
+*.backup.jou
+*.backup.log
+*.str
+vivado_*.backup*
+__pycache__/
+*.pyc
