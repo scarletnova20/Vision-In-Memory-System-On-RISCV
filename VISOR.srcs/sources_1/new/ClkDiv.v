@@ -53,7 +53,9 @@ module InstrMem (
     reg [31:0] mem [0:255];   // 256 instructions = 1KB
 
     initial begin
+        // synthesis translate_off
         $readmemh("program.mem", mem);
+        // synthesis translate_on
     end
 
     // SYNCHRONOUS read - mandatory for Artix-7 BRAM
@@ -79,7 +81,9 @@ module DataMem (
     reg [31:0] mem [0:2047]; // 8KB Memory
 
     initial begin
+        // synthesis translate_off
         $readmemh("image.mem", mem);
+        // synthesis translate_on
     end
 
     always @(posedge clk) begin
